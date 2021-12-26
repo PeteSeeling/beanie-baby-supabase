@@ -11,11 +11,11 @@ window.addEventListener('load', async() => {
 
     const planes = await getPlanes();
 
-    for (let plane of planes){
+    for (let plane of planes) {
         const planeEl = renderPlaneCard(plane);
-
+        
+        console.log(planeEl);
         airplaneContainer.append(planeEl);
     }
 });
 
-getPlanes();

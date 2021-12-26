@@ -24,7 +24,9 @@ export async function renderPlaneDetail(plane){
     const passengerEl = document.createElement('p');
     const speedEl = document.createElement('p');
 
+
     div.classList.add('plane-detail');
+    div.href = `./details/?id=${plane.id}`; 
 
     modelEl.textContent = plane.model;
     modelEl.classList.add('model');
@@ -39,7 +41,7 @@ export async function renderPlaneDetail(plane){
     speedEl.classList.add('speed');
 
     descriptionEl.textContent = plane.description;
-    descriptionEl.classList.add('model');
+    descriptionEl.classList.add('description');
 
     div.append(modelEl, engineEl, passengerEl, speedEl, descriptionEl);
 

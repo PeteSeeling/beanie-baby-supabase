@@ -2,10 +2,10 @@ const supabase_Url = 'https://osvbnemrpkxnsdboazbe.supabase.co';
 const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYzOTUwODkwMywiZXhwIjoxOTU1MDg0OTAzfQ.WbfpkieH6xyID6pt237Vr_Y78Fs1wnkmUdHXoHg5twU';
 const client = supabase.createClient(supabase_Url, SUPABASE_KEY);
 
-export async function getPlanes(){
+export async function getPlanes() {
     const response = await client
         .from ('airplanes')
-        .select();
+        .select('*');
 console.log(response);
     return response.data;
 }
