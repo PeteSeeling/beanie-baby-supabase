@@ -2,7 +2,7 @@
 import { getPlanes, getPlane } from './fetch-utils.js';
 import { renderPlaneCard, renderPlaneDetail } from './render-utils.js';
 // let state
-const airplaneContainer = document.getElementById('airplane-detail-container');
+const airplaneContainer = document.getElementById('airplanes-container');
 // set event listeners 
   // get user input
   // use user input to update state 
@@ -16,6 +16,8 @@ window.addEventListener('load', async() => {
         
         console.log(planeEl);
         airplaneContainer.append(planeEl);
+
+        return planeEl;
     }
 });
 
