@@ -12,7 +12,7 @@ window.addEventListener('load', async() => {
     const planes = await getPlanes(2);
 
     for (let plane of planes) {
-        const planeEl = await renderPlaneDetail(plane);
+        const planeEl = await renderPlaneCard(plane);
         
         console.log(planeEl);
         airplaneContainer.append(planeEl);
