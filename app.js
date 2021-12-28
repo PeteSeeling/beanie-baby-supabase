@@ -9,10 +9,10 @@ const airplaneContainer = document.getElementById('airplanes-container');
   // update DOM to reflect the new state
 window.addEventListener('load', async() => {
 
-    const planes = await getPlanes();
+    const planes = await getPlanes(2);
 
     for (let plane of planes) {
-        const planeEl = renderPlaneCard(plane);
+        const planeEl = await renderPlaneDetail(plane);
         
         console.log(planeEl);
         airplaneContainer.append(planeEl);

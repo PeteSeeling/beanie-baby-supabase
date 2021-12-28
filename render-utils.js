@@ -7,7 +7,7 @@ export function renderPlaneCard(plane){
     div.classList.add('plane-card');
 
     p.textContent = plane.model;
-    a.href = `./details/index.html`;
+    a.href = `.details/index.html`;
 
     div.append(p, img);
 

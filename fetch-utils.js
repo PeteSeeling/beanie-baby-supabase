@@ -5,8 +5,8 @@ const client = supabase.createClient(supabase_Url, SUPABASE_KEY);
 export async function getPlanes() {
     const response = await client
         .from ('airplanes')
-        .select('*');
-console.log(response);
+        .select();
+// console.log(response.data);
     return response.data;
 }
 
