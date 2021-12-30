@@ -109,4 +109,23 @@ footer {
     margin: 5px;
     border-radius: 15px;
 }
+.model{
+    font-size:2rem;
+    text-align: center;
 
+}
+.engine{
+    font:1.7rem;
+    text-align: center;
+    border: solid 2px;
+    border-color:white;
+}
+.speed{
+    font:1.5rem;
+    text-align:center;
+    border: solid 2px;
+    border-color:white;
+}
+h3{
+    text-align: center;
+}
