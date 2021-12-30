@@ -91,4 +91,22 @@ footer {
 }
 .main-section{
     width:50%;
+    display: flex;
+  
+    
 }
+#airplanes-container{
+    display:flex;
+   
+   
+}
+.plane-card{
+    border: solid 3px rgb(255, 255, 255);
+    background-color: rgb(144, 206, 221);
+    display: grid;
+    width: 125px;
+    height: 100px;
+    margin: 5px;
+    border-radius: 15px;
+}
+
