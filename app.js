@@ -9,15 +9,16 @@ const airplaneContainer = document.getElementById('airplanes-container');
   // update DOM to reflect the new state
 window.addEventListener('load', async() => {
 
-    const planes = await getPlanes(2);
+    const planes = await getPlanes();
 
     for (let plane of planes) {
-        const planeEl = await renderPlaneCard(plane);
+        const planeEl = renderPlaneCard(plane);
         
-        console.log(planeEl);
+        console.log(planes);
+        
         airplaneContainer.append(planeEl);
 
-        return planeEl;
+        // return planes;
     }
 });
 
