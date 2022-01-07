@@ -129,3 +129,11 @@ footer {
 h3{
     text-align: center;
 }
+.image{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height:300px;
+    width:300px;
+}
