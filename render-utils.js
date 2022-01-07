@@ -1,4 +1,3 @@
-import { getPlane } from './fetch-utils.js';
 
 export function renderPlaneCard(plane){
     const div = document.createElement('div');
@@ -50,8 +49,6 @@ export function renderPlaneDetail(plane){
     descriptionEl.classList.add('model');
 
     div.append(modelEl, img, engineEl, passengerEl, speedEl, descriptionEl);
-
-console.log(div);
 
     return div;
 }
