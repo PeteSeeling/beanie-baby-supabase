@@ -12,3 +12,4 @@ window.addEventListener('load', async() =>{
 
     airplaneDetailContainerEl.append(detailsEl);
 });
+console.log(id)
