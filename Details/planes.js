@@ -1,5 +1,5 @@
-import { getPlane, getPlanes } from '../fetch-utils.js';
-import { renderPlaneCard, renderPlaneDetail } from '../render-utils.js';
+import { getPlane } from '../fetch-utils.js';
+import { renderPlaneDetail } from '../render-utils.js';
 
 
 const airplaneDetailContainer = document.getElementById('airplane-detail-container');
