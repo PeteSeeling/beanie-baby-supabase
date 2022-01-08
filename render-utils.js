@@ -1,3 +1,4 @@
+
 export function renderPlaneCard(plane){
     const div = document.createElement('div');
     const a = document.createElement('a');
@@ -7,15 +8,18 @@ export function renderPlaneCard(plane){
     div.classList.add('plane-card');
 
     p.textContent = plane.model;
-    a.href = `Details/index.html`;
+    a.href = `./details/?id=${plane.id}`;
 
     div.append(p, img);
 
     a.append(div);
+   
     return a;
+
 }
 
-export async function renderPlaneDetail(plane){
+export function renderPlaneDetail(plane){
+    
     const div = document.createElement('div');
     const img = document.createElement('img');
     const descriptionEl = document.createElement('p');
@@ -38,10 +42,13 @@ export async function renderPlaneDetail(plane){
     speedEl.textContent = plane.speed;
     speedEl.classList.add('speed');
 
+    img.src = `../assets/plane-${plane.id}.jpg`;
+    img.classList.add('image');
+    
     descriptionEl.textContent = plane.description;
     descriptionEl.classList.add('model');
 
-    div.append(modelEl, engineEl, passengerEl, speedEl, descriptionEl);
+    div.append(modelEl, img, engineEl, passengerEl, speedEl, descriptionEl);
 
     return div;
 }

@@ -1,21 +1,18 @@
-// import functions and grab DOM elements
-import { getPlanes, getPlane } from './fetch-utils.js';
-import { renderPlaneCard, renderPlaneDetail } from './render-utils.js';
-// let state
-const airplaneContainer = document.getElementById('airplane-detail-container');
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+
+import { getPlanes } from './fetch-utils.js';
+import { renderPlaneCard } from './render-utils.js';
+
+const airplaneContainer = document.getElementById('airplanes-container');
+
 window.addEventListener('load', async() => {
 
     const planes = await getPlanes();
 
-    for (let plane of planes){
+    for (let plane of planes) {
         const planeEl = renderPlaneCard(plane);
-
+        
         airplaneContainer.append(planeEl);
+
     }
 });
 
-getPlanes();

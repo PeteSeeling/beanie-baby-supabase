@@ -2,11 +2,11 @@
 body {
     /* feel free to update these css variables for a quick theme */
     
-    --color1: white;
-    --color2: white;
-    --color3: white;
-    --color4: white;
-    --color5: white;
+    --color1: rgb(255, 255, 255);
+    --color2: rgb(182, 229, 248);
+    --color3: rgb(162, 209, 240);
+    --color4: rgb(167, 220, 241);
+    --color5: rgb(192, 235, 243);
     
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
         
@@ -88,4 +88,52 @@ footer {
     justify-content: flex-end;
     background-color: var(--color3);
     box-shadow: var(--shadow);
+}
+.main-section{
+    width:50%;
+    display: flex;
+  
+    
+}
+#airplanes-container{
+    display:flex;
+   
+   
+}
+.plane-card{
+    border: solid 3px rgb(255, 255, 255);
+    background-color: rgb(144, 206, 221);
+    display: grid;
+    width: 125px;
+    height: 100px;
+    margin: 5px;
+    border-radius: 15px;
+}
+.model{
+    font-size:2rem;
+    text-align: center;
+
+}
+.engine{
+    font:1.7rem;
+    text-align: center;
+    border: solid 2px;
+    border-color:white;
+}
+.speed{
+    font:1.5rem;
+    text-align:center;
+    border: solid 2px;
+    border-color:white;
+}
+h3{
+    text-align: center;
+}
+.image{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height:300px;
+    width:300px;
 }
